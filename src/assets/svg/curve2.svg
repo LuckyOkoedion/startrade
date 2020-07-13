@@ -1,0 +1,14 @@
+<svg 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="1440" 
+height="1024" 
+viewBox="0 0 381 270.933">
+<image xlink:href="../../../assets/img/entrepreneur.jpg" 
+y="-.327" x=".573" 
+width="382.191" 
+height="270.577" 
+preserveAspectRatio="none" 
+image-rendering="optimizeQuality"/>
+<path fill="#3a5465" d="M86.736 268.976s14.562-86.656 83.322-113.987c68.76-27.331 51.247-61.212 49.621-97.836-1.943-43.788 19.053-57.268 44.43-56.847 25.378.421 117.34.26 117.34.26l-.517 270.267z"/>
+</svg>
