@@ -1,107 +1,107 @@
-#homepagevectorbg {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 100vw;
-  height: 965px; // 67% of 1440 large screen
-  z-index: -1;
-}
-
-app-sidenav {
-  position: absolute;
-  top: 40px;
-}
-
-#frontpagepix {
-  position: absolute;
-  width: 30vw;
-  height: 48vh;
-  left: 10vw;
-  top: 22vh;
-}
-
-.welcometextdiv {
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  left: 66vw;
-  top: 30vh;
-  font-size: 0px;
-}
-
-.welcometext {
-  font-family: Piedra;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 62px;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-@media only screen and (max-width: 1200px) {
-  .welcometext {
-    font-size: 36px;
-  }
-}
-
-@media only screen and (min-width: 820px) {
-  app-sidenav {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 912px) {
-  .welcometextdiv {
-    left: 63vw;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #homepagevectorbg {
-    height: 514px;
-  }
-  #frontpagepix {
-    width: 16vw;
-    height: 24vh;
-    left: 15vw;
-  }
-  .welcometext {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .welcometextdiv {
-    top: 23vh;
-    left: 63vw;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  #homepagevectorbg {
-    height: 302px;
-  }
-  app-sidenav {
-    top: 12px;
-  }
-  #frontpagepix {
-    width: 16vw;
-    height: 12vh;
-    top: 11vh;
-    left: 30vw;
-  }
-
-  .welcometext {
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .welcometextdiv {
-    top: 12vh;
-    left: 63vw;
-  }
-}
-
-//   @media only screen and (max-width: 768px) {
-
+// #homepagevectorbg {
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   width: 100vw;
+//   height: 965px; // 67% of 1440 large screen
+//   z-index: -1;
 // }
+
+// app-sidenav {
+//   position: absolute;
+//   top: 40px;
+// }
+
+// #frontpagepix {
+//   position: absolute;
+//   width: 30vw;
+//   height: 48vh;
+//   left: 10vw;
+//   top: 22vh;
+// }
+
+// .welcometextdiv {
+//   position: absolute;
+//   width: fit-content;
+//   height: fit-content;
+//   left: 66vw;
+//   top: 30vh;
+//   font-size: 0px;
+// }
+
+// .welcometext {
+//   font-family: Piedra;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 48px;
+//   line-height: 62px !important;
+//   text-transform: uppercase;
+
+//   color: #ffffff;
+// }
+
+// @media only screen and (max-width: 1200px) {
+//   .welcometext {
+//     font-size: 36px;
+//   }
+// }
+
+// @media only screen and (min-width: 820px) {
+//   app-sidenav {
+//     display: none;
+//     visibility: hidden;
+//   }
+// }
+
+// @media only screen and (max-width: 912px) {
+//   .welcometextdiv {
+//     left: 63vw;
+//   }
+// }
+
+// @media only screen and (max-width: 768px) {
+//   #homepagevectorbg {
+//     height: 514px;
+//   }
+//   #frontpagepix {
+//     width: 16vw;
+//     height: 24vh;
+//     left: 15vw;
+//   }
+//   .welcometext {
+//     font-size: 22px;
+//     line-height: 30px !important;
+//   }
+//   .welcometextdiv {
+//     top: 23vh;
+//     left: 63vw;
+//   }
+// }
+
+// @media only screen and (max-width: 450px) {
+//   #homepagevectorbg {
+//     height: 302px;
+//   }
+//   app-sidenav {
+//     top: 12px;
+//   }
+//   #frontpagepix {
+//     width: 16vw;
+//     height: 12vh;
+//     top: 11vh;
+//     left: 30vw;
+//   }
+
+//   .welcometext {
+//     font-size: 13px;
+//     line-height: 20px !important;
+//   }
+//   .welcometextdiv {
+//     top: 12vh;
+//     left: 63vw;
+//   }
+// }
+
+// //   @media only screen and (max-width: 768px) {
+
+// // }

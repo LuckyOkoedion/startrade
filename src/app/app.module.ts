@@ -15,8 +15,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeBodyComponent } from './components/home-body/home-body.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
-
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { PopupShadowComponent } from './components/popup-shadow/popup-shadow.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +31,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     FooterComponent,
     HomeBodyComponent,
     SidenavComponent,
+    PopupShadowComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
     AppRoutingModule
   ],
   providers: [],

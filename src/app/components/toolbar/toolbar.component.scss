@@ -26,6 +26,10 @@ ul {
   text-transform: uppercase;
 }
 
+.navbar a:hover {
+  transform: scale(0.9);
+}
+
 .brand {
   position: absolute;
   left: 0px;
@@ -45,6 +49,10 @@ ul {
   color: #ffffff;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.active {
+  border-bottom: 4px solid #93f763;
 }
 
 @media only screen and (max-width: 1100px) {

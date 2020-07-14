@@ -7,17 +7,13 @@
   z-index: -1;
 }
 
-app-sidenav {
-  position: absolute;
-  top: 40px;
-}
-
 #frontpagepix {
   position: absolute;
   width: 30vw;
   height: 48vh;
   left: 10vw;
   top: 22vh;
+  z-index: 1;
 }
 
 .welcometextdiv {
@@ -40,9 +36,47 @@ app-sidenav {
   color: #ffffff;
 }
 
+.big-button {
+  width: 22vw;
+  height: 43px;
+  background: #000000;
+  border: 4px solid #93f763;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+}
+
+.big-button:hover {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.btn1 {
+  position: absolute;
+  left: 66vw;
+  top: 600px;
+}
+
+.btn2 {
+  position: absolute;
+  left: 66vw;
+  top: 690px;
+}
+
 @media only screen and (max-width: 1200px) {
   .welcometext {
     font-size: 36px;
+  }
+  .big-button {
+    font-size: 18px;
   }
 }
 
@@ -51,11 +85,18 @@ app-sidenav {
     display: none;
     visibility: hidden;
   }
+  .big-button {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 912px) {
   .welcometextdiv {
     left: 63vw;
+  }
+
+  .big-button {
+    font-size: 12px;
   }
 }
 
@@ -74,6 +115,20 @@ app-sidenav {
   }
   .welcometextdiv {
     top: 23vh;
+    left: 63vw;
+  }
+
+  .big-button {
+    font-size: 9px;
+  }
+
+  .btn1 {
+    top: 45vh;
+    left: 63vw;
+  }
+
+  .btn2 {
+    top: 55vh;
     left: 63vw;
   }
 }
@@ -99,6 +154,23 @@ app-sidenav {
   .welcometextdiv {
     top: 12vh;
     left: 63vw;
+  }
+
+  .big-button {
+    width: 160px;
+    height: 30px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .btn1 {
+    top: 25vh;
+    left: 55vw;
+  }
+
+  .btn2 {
+    top: 30vh;
+    left: 55vw;
   }
 }
 

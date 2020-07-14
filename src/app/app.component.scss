@@ -1,84 +1,124 @@
 app-toolbar {
-    position: absolute;
-    width: 100%;
-    height: 9.6vh;
-    left: 0px;
-    top: 0px;
-  
-    background: #3a5465;
-    box-shadow: 0px 4px 4px #000000;
-  }
-  
-  app-footer {
-    position: absolute;
-    width: 100%;
-    height: 63vh;
-    left: 0px;
-    top: 965px;
-  }
-  
-  .drawerContainer {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 100vw;
-    height: 965px; // 67% of 1440 large screen
-    z-index: -1;
-  }
-  
-  button {
+  position: absolute;
+  width: 100%;
+  height: 9.6vh;
+  left: 0px;
+  top: 0px;
+
+  background: #3a5465;
+  box-shadow: 0px 4px 4px #000000;
+  z-index: 3;
+}
+
+app-footer {
+  position: absolute;
+  width: 100%;
+  height: 63vh;
+  left: 0px;
+  top: 965px;
+}
+
+app-sidenav {
+  background-image: linear-gradient(to bottom right, #ffffff, #3a5465);
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: fit-content;
+  top: 9.6vh;
+  height: 965px;
+  padding: 10px;
+  z-index: 3;
+}
+
+app-popup-shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100%;
+  background: #000000;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+button {
+  cursor: pointer;
+}
+
+#hamburger {
+  z-index: 3;
+}
+
+// .sidenavlink{
+//   color: red($color: #000000);
+// }
+
+@media only screen and (min-width: 768px) {
+  #hamburger {
+    display: none;
+    visibility: hidden;
     cursor: pointer;
   }
-  
-  // .sidenavlink{
-  //   color: red($color: #000000);
-  // }
-  
-  @media only screen and (min-width: 768px) {
-    #hamburger {
-      display: none;
-      visibility: hidden;
-      cursor: pointer;
-    }
-  
-    // #hamburger :hover {
-    //   cursor: pointer;
-    // }
+
+  app-sidenav {
+    display: none;
+    visibility: hidden;
   }
-  
-  @media only screen and (max-width: 768px) {
-    app-toolbar {
-      height: 76px;
-    }
-    app-footer {
-      top: 512px;
-      height: 31.5vh;
-    }
-  
-    #hamburger {
-      position: absolute;
-      height: 50px;
-      width: 50px;
-      top: 2vh;
-      left: 5vw;
-    }
+
+  app-popup-shadow {
+    display: none;
+    visibility: hidden;
   }
-  
-  @media only screen and (max-width: 450px) {
-    app-toolbar {
-      height: 45px;
-    }
-    app-footer {
-      top: 302px;
-      height: 15.8vh;
-    }
-  
-    #hamburger {
-      position: absolute;
-      height: 25px;
-      width: 25px;
-      top: 2vh;
-      left: 5vw;
-    }
+}
+
+@media only screen and (max-width: 768px) {
+  app-toolbar {
+    height: 76px;
   }
-  
+  app-footer {
+    top: 512px;
+    height: 31.5vh;
+  }
+
+  app-sidenav {
+    height: 44vh;
+  }
+
+  app-popup-shadow {
+    height: 514px;
+  }
+
+  #hamburger {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 2vh;
+    left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  app-toolbar {
+    height: 45px;
+  }
+  app-footer {
+    top: 302px;
+    height: 15.8vh;
+  }
+
+  app-popup-shadow {
+    height: 302px;
+  }
+
+  app-sidenav {
+    height: 27vh;
+    top: 5.5vh;
+  }
+
+  #hamburger {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 2vh;
+    left: 5vw;
+  }
+}

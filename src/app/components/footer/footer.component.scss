@@ -13,3 +13,50 @@
   height: 22%;
   background: #3a5465;
 }
+
+#copyrightText {
+  position: relative;
+  top: 40%;
+  color: #ffffff;
+  font-size: 18px;
+  left: 2vw;
+}
+
+#developerText {
+  position: relative;
+  top: 20%;
+  color: #ffffff;
+  left: 70vw;
+  font-size: 18px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration-color: #93f763;
+  text-decoration-style: solid;
+}
+
+@media only screen and (max-width: 1200px) {
+  #copyrightText {
+    top: 20%;
+    left: 30vw;
+    font-size: 16px;
+  }
+
+  #developerText {
+    left: 30vw;
+    top: 35%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #copyrightText {
+    font-size: 8px;
+  }
+
+  #developerText {
+    top: 25%;
+    font-size: 8px;
+  }
+}

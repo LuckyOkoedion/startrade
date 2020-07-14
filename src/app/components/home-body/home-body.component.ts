@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy, AfterViewInit, Input } from '@angular/core';
 import { smoothRotate, halfSecondFadeIn, oneSecondFadeIn, oneAndHalfSecondFadeIn, twoSecondFadeIn } from 'src/app/animations/startradeanimations';
-import { MatDrawerMode } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-home-body',
@@ -12,7 +11,6 @@ export class HomeBodyComponent implements OnInit, OnDestroy, AfterViewInit {
 
   state: string = "no-rotation";
   textState: string = "hidden";
-  @Input() mode: MatDrawerMode
   constructor() {
   }
 

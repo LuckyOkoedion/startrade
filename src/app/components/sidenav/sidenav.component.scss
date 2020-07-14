@@ -1,1 +1,25 @@
+.sideNavButton {
+  display: block;
+  width: 160px;
+  height: 30px;
+  margin-bottom: 10px;
+  color: #3a5465;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.snBtn1 {
+  margin-top: 20px;
+}
 
+.active {
+  border-bottom: 4px solid #93f763;
+}
+
+.sideNavButton:hover {
+  transform: scale(0.9);
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+}

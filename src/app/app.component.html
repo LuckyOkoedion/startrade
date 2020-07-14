@@ -1,4 +1,9 @@
 <app-toolbar></app-toolbar>
+<app-sidenav *ngIf="iconType === false"></app-sidenav>
+<app-popup-shadow
+  *ngIf="iconType === false"
+  (click)="toggleIcon()"
+></app-popup-shadow>
 <button (click)="toggleIcon()">
   <img
     *ngIf="iconType; else elseBlock"
@@ -10,9 +15,6 @@
     <img src="../../../assets/img/close-menu.png" id="hamburger" alt=""
   /></ng-template>
 </button>
-<a class="sidenavlink" href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Clients</a>
-<a href="#">Contact</a>
 <router-outlet></router-outlet>
+<span class="lowerLeftMessage">Attain financial progression</span>
 <app-footer></app-footer>

@@ -3,14 +3,37 @@
   src="../../../assets/img/vectorbackground.png"
   alt=""
 />
-<app-sidenav></app-sidenav>
 <img
+  (mouseenter)="changeAnimationState()"
   id="frontpagepix"
   src="../../../assets/img/frontpageicon.png"
   alt=""
   [@smooth-rotate]="state"
 />
+
 <div class="welcometextdiv">
+  <div class="welcometext" [@halfSecondFadeIn]="textState">
+    Giving you access
+  </div>
+  <br />
+  <div class="welcometext" [@oneSecondFadeIn]="textState">to premium</div>
+  <br />
+  <div class="welcometext" [@oneAndHalfSecondFadeIn]="textState">
+    investment
+  </div>
+  <br />
+  <div class="welcometext" [@twoSecondFadeIn]="textState">opportunities</div>
+</div>
+
+<button class="big-button btn1">Login</button>
+<button class="big-button btn2">create an account</button>
+
+<!-- 
+  THE LOCALHOST VERSION
+  ##################################
+ -->
+
+<!-- <div class="welcometextdiv">
   <div class="welcometext">
     Giving you access
   </div>
@@ -22,20 +45,9 @@
   </div>
   <br />
   <div class="welcometext">opportunities</div>
-</div>
-
-<!-- <div class="welcometextdiv">
-<div class="welcometext" 
-[@halfSecondFadeIn]="textState"
->
-  Giving you access
-</div>
-<br />
-<div class="welcometext" [@oneSecondFadeIn]="textState">to premium</div>
-<br />
-<div class="welcometext" [@oneAndHalfSecondFadeIn]="textState">
-  investment
-</div>
-<br />
-<div class="welcometext" [@twoSecondFadeIn]="textState">opportunities</div>
 </div> -->
+
+<!-- 
+  THE PRODUCTION VERSION
+  ##################################
+ -->
