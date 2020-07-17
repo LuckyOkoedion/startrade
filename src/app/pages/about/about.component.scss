@@ -1,4 +1,53 @@
-h1 {
-    position: relative;
-    top: 20vh;
+:host {
+  overflow-y: hidden;
 }
+
+.main-body {
+  position: relative;
+  top: 340px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.heading-underline {
+  width: 90px;
+  height: 10px;
+  background: #93f763;
+  margin-top: 5px;
+}
+
+.p-body {
+  margin-top: 20px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+}
+
+//   @media only screen and (max-width: 768px) {
+
+// }
+
+@media only screen and (max-width: 520px) {
+  .main-body {
+    top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .p-body {
+    font-size: 14px;
+  }
+
+  .p-heading {
+    font-size: 16px;
+  }
+}
+
+//   @media only screen and (max-width: 768px) {
+
+// }
+
+// @media only screen and (max-width: 450px) {
+
+// }

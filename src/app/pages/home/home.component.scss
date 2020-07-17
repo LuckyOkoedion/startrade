@@ -134,17 +134,14 @@
 }
 
 @media only screen and (max-width: 450px) {
-  #homepagevectorbg {
-    height: 302px;
-  }
   app-sidenav {
     top: 12px;
   }
   #frontpagepix {
-    width: 16vw;
-    height: 12vh;
-    top: 11vh;
-    left: 30vw;
+    width: 24vw;
+    height: 18vh;
+    top: 20vh;
+    left: 15vw;
   }
 
   .welcometext {
@@ -152,8 +149,8 @@
     line-height: 20px;
   }
   .welcometextdiv {
-    top: 12vh;
-    left: 63vw;
+    top: 20vh;
+    left: 66vw;
   }
 
   .big-button {
@@ -164,12 +161,12 @@
   }
 
   .btn1 {
-    top: 25vh;
+    top: 40vh;
     left: 55vw;
   }
 
   .btn2 {
-    top: 30vh;
+    top: 50vh;
     left: 55vw;
   }
 }

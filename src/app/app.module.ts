@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeBodyComponent } from './components/home-body/home-body.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { PopupShadowComponent } from './components/popup-shadow/popup-shadow.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { PopupShadowComponent } from './components/popup-shadow/popup-shadow.com
     HomeBodyComponent,
     SidenavComponent,
     PopupShadowComponent,
+    BreadcrumbComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 <app-toolbar></app-toolbar>
 <app-sidenav *ngIf="iconType === false"></app-sidenav>
 <app-popup-shadow
+  [ngClass]="popupShadowClass"
   *ngIf="iconType === false"
   (click)="toggleIcon()"
 ></app-popup-shadow>
@@ -16,5 +17,5 @@
   /></ng-template>
 </button>
 <router-outlet></router-outlet>
-<span class="lowerLeftMessage">Attain financial progression</span>
-<app-footer></app-footer>
+<span [ngClass]="lowerLeftMessageClass">Attain financial progression</span>
+<app-footer [ngClass]="footerClass"></app-footer>

@@ -1,5 +1,5 @@
 app-toolbar {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 9.6vh;
   left: 0px;
@@ -21,7 +21,7 @@ app-footer {
 app-sidenav {
   background-image: linear-gradient(to bottom right, #ffffff, #3a5465);
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
-  position: absolute;
+  position: fixed;
   width: fit-content;
   top: 9.6vh;
   height: 965px;
@@ -29,7 +29,18 @@ app-sidenav {
   z-index: 3;
 }
 
-app-popup-shadow {
+.home-popup-shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100%;
+  background: #000000;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.about-popup-shadow {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -48,11 +59,63 @@ button {
   z-index: 3;
 }
 
-// .sidenavlink{
-//   color: red($color: #000000);
-// }
+.homeLowerLeftMessage {
+  position: absolute;
+  left: 75px;
+  top: 1150px;
 
-@media only screen and (min-width: 768px) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #3a5465;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.aboutLowerLeftMessage {
+  position: absolute;
+  left: 75px;
+  top: 1150px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #3a5465;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+#hamburger {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 2vh;
+  left: 5vw;
+}
+
+app-sidenav {
+  height: 44vh;
+}
+
+.home-popup-shadow {
+  height: 514px;
+}
+
+.about-popup-shadow {
+  height: 514px;
+}
+
+@media only screen and (min-width: 820px) {
   #hamburger {
     display: none;
     visibility: hidden;
@@ -64,9 +127,32 @@ button {
     visibility: hidden;
   }
 
-  app-popup-shadow {
+  .home-popup-shadow {
     display: none;
     visibility: hidden;
+  }
+
+  .about-popup-shadow {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .aboutFooter {
+    top: 1200px;
+  }
+
+  .aboutLowerLeftMessage {
+    top: 1300px;
+  }
+
+  .home-popup-shadow {
+    height: 1000px;
+  }
+
+  .about-popup-shadow {
+    height: 1500px;
   }
 }
 
@@ -74,51 +160,86 @@ button {
   app-toolbar {
     height: 76px;
   }
-  app-footer {
+  // app-footer {
+  //   top: 512px;
+  //   height: 31.5vh;
+  // }
+
+  .homeFooter {
     top: 512px;
     height: 31.5vh;
   }
+
+  .aboutFooter {
+    top: 1500px;
+    height: 31.5vh;
+  }
+
+  // .aboutFooterText {
+  // }
 
   app-sidenav {
     height: 44vh;
   }
 
-  app-popup-shadow {
+  .home-popup-shadow {
     height: 514px;
   }
 
+  .about-popup-shadow {
+    height: 1500px;
+  }
+
   #hamburger {
-    position: absolute;
+    position: fixed;
     height: 50px;
     width: 50px;
     top: 2vh;
     left: 5vw;
   }
+
+  .homeLowerLeftMessage {
+    top: 575px;
+    font-size: 24px;
+    -webkit-text-stroke-width: 2px;
+  }
+
+  .aboutLowerLeftMessage {
+    top: 1580px;
+    font-size: 24px;
+    -webkit-text-stroke-width: 2px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  app-toolbar {
-    height: 45px;
-  }
-  app-footer {
-    top: 302px;
-    height: 15.8vh;
-  }
-
-  app-popup-shadow {
-    height: 302px;
-  }
-
   app-sidenav {
     height: 27vh;
     top: 5.5vh;
   }
 
   #hamburger {
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    top: 2vh;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 3vh;
     left: 5vw;
+  }
+
+  .homeLowerLeftMessage {
+    top: 575px;
+    font-size: 16px;
+    left: 10px;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .about-popup-shadow {
+    height: 1500px;
+  }
+
+  .aboutLowerLeftMessage {
+    top: 1580px;
+    font-size: 16px;
+    left: 10px;
+    -webkit-text-stroke-width: 1px;
   }
 }

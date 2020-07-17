@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "startrade-1acce": {
+      "hosting": {
+        "startrade": [
+          "startrade-1acce"
+        ]
+      }
+    }
+  }
+}

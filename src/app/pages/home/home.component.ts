@@ -15,8 +15,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngAfterViewInit(): void {
-    this.fadeInText()
-    this.changeAnimationState();
+    setTimeout(() => {
+      this.fadeInText()
+    }, 1000);
+
+    setTimeout(() => {
+      this.changeAnimationState();
+    }, 2500);
 
   }
 
@@ -30,6 +35,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+
+
   }
 
 

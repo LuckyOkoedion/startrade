@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rules.component.scss']
 })
 export class RulesComponent implements OnInit {
+  pageTitle = "Rules"
+  pageImage = "../../../assets/img/laptop-3196481.jpg"
 
   constructor() { }
 

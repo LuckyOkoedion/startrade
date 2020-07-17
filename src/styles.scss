@@ -8,37 +8,10 @@
   padding: 0;
 }
 
-.lowerLeftMessage {
-  position: absolute;
-  left: 75px;
-  top: 1150px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 48px;
-  line-height: 56px;
-  color: #ffffff;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #3a5465;
-  text-transform: uppercase;
-  z-index: 3;
-}
+// @media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 768px) {
-  .lowerLeftMessage {
-    top: 575px;
-    font-size: 24px;
-    -webkit-text-stroke-width: 2px;
-  }
-}
+// }
 
-@media only screen and (max-width: 450px) {
-  .lowerLeftMessage {
-    top: 320px;
-    font-size: 16px;
-    left: 10px;
-    -webkit-text-stroke-width: 1px;
-  }
-}
+// @media only screen and (max-width: 450px) {
+// }
